@@ -1,6 +1,8 @@
-# BharatKat
+# Portfolio for Web Dev & UI Designer
 
-## YAL YAL !!
+## BharatKat
+
+### YAL YAL !!
 
 Portfolio web developer site built with 11ty + Headless Decap CMS integration
 
