@@ -6,6 +6,8 @@ Portfolio web developer site built with 11ty + Headless Decap CMS integration
 
 Free download and open source code project - by [creativitas](https://www.creativitas.dev)
 
+Detail Documentation read here [https://www.hockeycomputindo.com/themes/eleventy/bharatkat-portfolio-freedownload-sourcecode/](https://www.hockeycomputindo.com/themes/eleventy/bharatkat-portfolio-freedownload-sourcecode/)
+
 [☕ Buy me a Coffee](https://creativitaz.gumroad.com/coffee)
 
 [🍔 Buy me a Burger](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JVZVXBC4N9DAN)
