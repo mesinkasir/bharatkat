@@ -1,0 +1,19 @@
+<div class="mb-5 mobile">
+<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="1.5" space-between="60" free-mode="true"
+style="--swiper-pagination-color: var(--color-secondary);">
+{% for blog in collections.posts | reverse | limit(9) %}
+<swiper-slide class="mb-3 text-start">
+<div>
+{% if blog.data.image %}<a href="{{blog.url}}" title="{{blog.data.title}}">
+<img class="img-post" alt="{{blog.data.title}}" src="{{blog.data.image}}"/>
+</a>
+{% endif %}
+<div>
+<h3 class="blog-list-title mt-3"><a href="{{blog.url}}" title="{{blog.data.title}}">{{blog.data.title}}</a></h3>
+<p class="blog-list-article ">{{blog.data.description}}</p>
+</div>
+</div>
+</swiper-slide>
+{% endfor %}
+</swiper-container>
+</div>

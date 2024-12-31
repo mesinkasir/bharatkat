@@ -1,0 +1,33 @@
+<div class="desktop-hidden">
+<div class="swiper mySwipers">
+<div class="swiper-wrapper">
+<div class="swiper-slide show-all text-center text-tagging">Show All <img class="img-fluid" alt="{{title}}" width="20" height="20" src="/img/list.svg"/></div>
+{% for tag in collections.all | getAllTags | filterTagList %}{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<div class="swiper-slide text-center text-tagging"><a href="{{ tagUrl }}" class="txt-13">{{ tag }}</a></div>
+{% endfor %}
+</div>
+</div>
+<script>
+var swiper = new Swiper(".mySwipers", {
+slidesPerView: 3,
+spaceBetween: 40,
+pagination: {
+clickable: true,
+},
+breakpoints: {
+640: {
+slidesPerView: 6,
+spaceBetween: 20,
+},
+768: {
+slidesPerView: 6,
+spaceBetween: 40,
+},
+1024: {
+slidesPerView: 6,
+spaceBetween: 50,
+},
+},
+});
+</script>
+</div>

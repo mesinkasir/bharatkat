@@ -1,0 +1,26 @@
+<header class="new_header">
+{% include "widget/navbar.njk" %}
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"><link rel="stylesheet" href="/css/common.css"><link rel="stylesheet" href="/css/home_hero.css">
+<div class="grid-containers">
+<div class="container content">
+<div class="text-content">
+ <h1>{{header.title}}</h1>
+ <p>{{header.description}}</p>
+<p>
+<a href="https://creativitaz.gumroad.com/l/bharatkat" class="btn"><i class="bx bxs-rocket"></i>  Download Now</a>
+<a href="/support/" class="btn btn-pink"><i class="bx bxl-github"></i> Support Us</a>
+</p>
+</div>
+<div class="icon">
+ <img src="{{image}}" class="img-fluid img-headero p-3 col-md-10" alt="{{metadata.title}}">
+</div>
+</div>
+<div class="social-links">
+ <a href="{{header.social.facebook}}" title="Jamstack Themes Projects"><i class="bx bxs-rocket"></i></a>
+ <a href="{{header.social.instagram}}" title="Creativitas Website"><i class="bx bxl-dev-to"></i></a>
+ <a href="{{header.social.twitter}}" title="Github Profile"><i class="bx bxl-github"></i></a>
+ <a href="{{header.social.youtube}}" title="Art YouTube Chanel"><i class="bx bxl-youtube"></i></a>
+</div>
+</div>
+</header>
+<script> function adjustGridSize() { const vmin = Math.min(window.innerWidth, window.innerHeight) / 100; document.documentElement.style.setProperty('--grid-size', `${25 * vmin}px`); }window.addEventListener('resize', adjustGridSize);adjustGridSize();</script>

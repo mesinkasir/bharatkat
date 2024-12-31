@@ -1,0 +1,7 @@
+<ul class="navbar-nav p-3">
+{% for s in metadata.navbar.navlist %}
+<li class="nav-item text-center me-5 p-3">
+<a class="nav-link text-white ms-3" href="{{s.link}}">{{s.nav}}</a>
+</li>
+{% endfor %}
+</ul>

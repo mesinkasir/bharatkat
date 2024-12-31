@@ -1,0 +1,39 @@
+<div class="container">
+<div class="row mb-5 p-3">
+<div class="col-md-5 section_1 p-3 ">
+<div class="media-content">
+<span class="polygon_section_1">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+<path d="M12.1716 2.01592C13.7337 0.453827 16.2663 0.45383 17.8284 2.01593L28.1716 12.3591C29.7337 13.9212 29.7337 16.4538 28.1716 18.0159L17.8284 28.3591C16.2663 29.9212 13.7337 29.9212 12.1716 28.3591L1.82842 18.0159C0.266327 16.4538 0.26633 13.9212 1.82843 12.3591L12.1716 2.01592Z" fill="#0000FF"/>
+</svg>
+</span>
+<span class="polygon_section_2">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+<path d="M12.1716 1.73858C13.7337 0.176484 16.2663 0.176486 17.8284 1.73858L28.1716 12.0817C29.7337 13.6438 29.7337 16.1765 28.1716 17.7386L17.8284 28.0817C16.2663 29.6438 13.7337 29.6438 12.1716 28.0817L1.82842 17.7386C0.266327 16.1765 0.26633 13.6438 1.82843 12.0817L12.1716 1.73858Z" fill="#79ACC7"/>
+</svg>
+</span>
+<h3 class="section_header text-center">
+<a href="{{metadata.url}}">{{section1.title}}</a>
+</h3>
+<span class="polygon_section_3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+<path d="M12.1716 1.73858C13.7337 0.176484 16.2663 0.176486 17.8284 1.73858L28.1716 12.0817C29.7337 13.6438 29.7337 16.1765 28.1716 17.7386L17.8284 28.0817C16.2663 29.6438 13.7337 29.6438 12.1716 28.0817L1.82842 17.7386C0.266327 16.1765 0.26633 13.6438 1.82843 12.0817L12.1716 1.73858Z" fill="#79ACC7"/>
+</svg>
+</span>
+<span class="polygon_section_4">   
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+<path d="M12.1716 1.73858C13.7337 0.176484 16.2663 0.176486 17.8284 1.73858L28.1716 12.0817C29.7337 13.6438 29.7337 16.1765 28.1716 17.7386L17.8284 28.0817C16.2663 29.6438 13.7337 29.6438 12.1716 28.0817L1.82842 17.7386C0.266327 16.1765 0.26633 13.6438 1.82843 12.0817L12.1716 1.73858Z" fill="#ED1C24"/>
+</svg>
+</span>
+</div>
+</div>
+<div class="col-md-6 offset-md-1 p-1 p-md-3">
+<div class="text-content">
+<h2><a href="{{metadata.url}}">{{section1.sub_title}}</a></h2>
+{% for tx in section1.text %}
+<p class="ms-2">{{ tx.info}}</p>
+{% endfor %}
+</div>
+</div>
+</div>
+</div>

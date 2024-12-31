@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% include "widget/seo.njk" %}
+{% include "widget/style.njk" %}
+</head>
+<body>
+{% include "layouts/theme/header.njk" %}
+<div class="container-fluid">
+<div class="row blog-tags">
+{% include "layouts/theme/tags-desktop.njk" %}
+{% include "layouts/theme/tags-mobile.njk" %}
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-md-12 p-3 p-md-5 article">
+{{content |safe }}
+</div>
+</div>
+</div>
+{% include "widget/marquee.njk" %}
+{% include "widget/footer.njk" %}
+</body>
+</html>

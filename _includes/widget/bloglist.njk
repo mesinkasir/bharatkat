@@ -1,0 +1,35 @@
+<div class="container">
+<div class="p-3 p-md-5"></div>
+<div class="row mt-5">
+<div class="col-md-8 mx-auto p-3 p-md-5 text-center">
+<h3 class="blog_list_title ">
+{{metadata.blog_widget.title}}
+</h3>
+<p class="blog_list_info mt-5 col-md-8 mx-auto">
+{{metadata.blog_widget.intro}}
+</p>
+</div>
+</div>
+<div class="row mt-5">
+{% for blog in collections.posts | reverse | limit(3) %}
+<div class="col-md-4 p-3 p-md-5">
+{% if blog.data.image %}<a href="{{blog.url}}" title="{{blog.data.title}}">
+<img class="img-posting" alt="{{blog.data.title}}" src="{{blog.data.image}}"/>
+</a>
+{% endif %}
+<h3 class="blog-list-title mt-3"><a href="{{blog.url}}" title="{{blog.data.title}}">
+{{blog.data.title}}
+</a></h3>
+<p class="blog-list-article">
+{{blog.data.description}}
+</p>
+</div>
+{% endfor %}
+<div class="col-md-4 mx-auto text-center p-3 p-md-5">
+<a href="/blog" class="btn text-white">
+{{metadata.blog_widget.button}}
+</a>
+</div>
+<div class="p-3 p-md-5"></div>
+</div>
+</div>

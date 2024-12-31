@@ -1,0 +1,34 @@
+<div class="mobile-hidden">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><style>.swiper-wrapper,.swiper-slide  {background-color: transparent;}</style>
+<div class="swiper mySwipers">
+<div class="swiper-wrapper trans">
+<div class="swiper-slide show-all trans"><small>Show All</small> <img class="img-fluid ms-3" alt="{{title}}" width="30" height="30" src="/img/list.svg"/></div>
+{% for tag in collections.all | getAllTags | filterTagList %}{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<div class="swiper-slide text-center"><a href="{{ tagUrl }}"><small>{{ tag }}</small></a></div>
+{% endfor %}
+</div>
+</div>
+<script>
+var swiper = new Swiper(".mySwipers", {
+slidesPerView: 6,
+spaceBetween: 0,
+pagination: {
+clickable: true,
+},
+breakpoints: {
+640: {
+slidesPerView: 6,
+spaceBetween: 20,
+},
+768: {
+slidesPerView: 6,
+spaceBetween: 40,
+},
+1024: {
+slidesPerView: 6,
+spaceBetween: 50,
+},
+},
+});
+</script>
+</div>

@@ -1,0 +1,111 @@
+{
+	"title": "Portfolio Web Themes Free Download Open Source Code",
+	"description": "Portofolio website themes by creativitas dev for your projects.",
+	"url": "http://localhost:8080",
+	"language": "en",
+	"locale": "en_US",
+	"favicon": "/img/creativitaslogo.png",
+	"image": "/img/creativitaslogo.png",
+	"facebook": "https://facebook.com/username",
+	"twitter": "https://twitter.com/username",
+	"tweet": "@user",
+	"navbar": {
+		"logo": "/img/creativitaslogo.png",
+		"navlist": [
+					{
+					"nav": "Home",
+					"link": "/"
+					},
+					{
+					"nav": "Projects",
+					"link": "/projects"
+					},
+					{
+					"nav": "Blog",
+					"link": "/blog"
+					}
+				],
+		"button": {
+			"text": "Download",
+			"link": "https://creativitaz.gumroad.com/l/bharatkat"
+		}
+	},
+	"blog_widget": {
+					"title": "Blogs Update",
+					"intro": "My scribbles are implied in my blog article.",
+					"button": "Explore All Posts"
+	},
+	"post_widget": {
+					"popular": "Popular Article",
+					"intro": "Read from popular article blog post."
+	},
+	"marquee": [
+		  		{
+		  			"text": "Need Jamstack Dev?? We are ready to help your projects",
+		  			"link": "https://www.hockeycomputindo.com/en/jamstack/"
+		  		},
+		  		{
+		  			"text": "Premium JAMSACTK Themes Collections",
+		  			"link": "https://www.axcora.com/en/websitethemes/"
+		  		},
+		  		{
+		  			"text": "Hire Creativitas Dev Team",
+		  			"link": "https://www.creativitas.dev"
+		  		}
+	],
+	"footer": {
+		"logo": "/img/creativitaslogo.png",
+		"info": "Connect with creativitasdev",
+		"social": [
+					{
+					"nav": "Visit Art on my Youtube Chanel",
+					"icon": "/img/youtube.svg",
+					"link": "https://www.youtube.com/@creativitasdev"
+					},
+					{
+					"nav": "Visit Our Github Repo",
+					"icon": "/img/github.svg",
+					"link": "https://github.com/mesinkasir"
+					},
+					{
+					"nav": "Creativitas Developer Team",
+					"icon": "/img/creativitaslogo.png",
+					"link": "https://www.creativitas.dev/"
+					},
+					{
+					"nav": "Download Source Code and Premium JAMSTACK Themes",
+					"icon": "/img/download.svg",
+					"link": "https://www.hockeycomputindo.com/themes/"
+					},
+					{
+					"nav": "JAMSTACK Dev Services",
+					"icon": "/img/star.svg",
+					"link": "https://www.axcora.com/en/websitedeveloper/"
+					}
+				],
+		"navlist": [
+					{
+					"nav": "Home",
+					"link": "/"
+					},
+					{
+					"nav": "Projects",
+					"link": "/projects"
+					},
+					{
+					"nav": "Blog",
+					"link": "/blog/"
+					},
+					{
+					"nav": "Contact",
+					"link": "/contact/"
+					}
+				]
+	},
+	"copyrights": "© Designed & Architected By Creativitas Dev",
+	"author": {
+		"name": "Creativitas Dev",
+		"email": "creativebydre@gmail.com",
+		"url": "https://creativitas.dev/"
+	}
+}

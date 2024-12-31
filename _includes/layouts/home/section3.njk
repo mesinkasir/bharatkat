@@ -1,0 +1,28 @@
+  <section class="media-and-text image-right" id="sick-seats-section">
+    <div class="container media-and-text-container">
+      <div class="row">
+        <div class="col-md-5 p-1">
+      <div class="media-content">
+        <img src="{{section3.image}}" alt="{{section3.title}}">
+      </div>
+      </div>
+      <div class="col-md-6 offset-md-1 p-3">
+      <div class="text-content">
+        <h2><a href="{{metadata.url}}">{{section3.title}}</a></h2>
+        <p class="subtitle">{{section3.intro}}</p>
+        <div class="features-list">
+{% for se3 in section3.text %}
+          <div class="feature-item">
+            <div class="feature-icon"></div>
+            <div class="feature-text">{{se3.info}}</div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="award">
+          <img src="{{section3.awards_image}}" alt="{{section3.title}}">
+          <p>{{section3.awards_text1}}<br>{{section3.awards_text2}}</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>

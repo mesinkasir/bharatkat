@@ -1,0 +1,7 @@
+<div class="container-fluid marqu_section p-3">
+<p class="marqu_text mb-0 mt-3"><marquee>
+{% for m in metadata.marquee %}<a class="ms-5" href="{{m.link}}">
+{{m.text}}
+</a>{% endfor %}
+</marquee></p>
+</div>

@@ -1,0 +1,16 @@
+<div class="row mt-5">
+{%- for item in pagination.items -%}
+<div class="col-md-4 p-3 p-md-5">
+{% if item.data.image %}<a href="{{item.url}}">
+<img class="img-posting img-fluid" alt="{{item.data.title}}" src="{{item.data.image}}"/>
+</a>
+{% endif %}
+<h3 class="blog-list-title mt-3">
+<a href="{{item.url}}">{{item.data.title}}</a>
+</h3>
+<p class="blog-list-article ">
+{{item.data.description}}
+</p>
+</div>
+{%- endfor -%}
+</div>

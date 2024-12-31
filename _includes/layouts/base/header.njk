@@ -1,0 +1,22 @@
+<div class="hero">
+{% include "widget/navbar.njk" %}
+    <div class="grid-containers">
+        <div class="container hero-content">
+            <h1>{{title}}</h1>
+            <div class="full-width-image"></div>
+        </div>
+        <div class="quote">"</div>
+    </div>
+</div>
+<style>
+    .full-width-image {
+    width: 100%;
+    height: 360px;
+    background-image: url('{{image or metadata.image}}');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: var(--spacing-md);
+  }
+</style>
+</div>

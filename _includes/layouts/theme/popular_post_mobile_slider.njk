@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><style>.trans,.mySwiper,.swiper-wrapper, .swiper-slide {background-color: transparent;}</style>
+<div class="swiper mySwiper p-1 me-3">
+<div class="swiper-wrapper">
+{% for p  in collections.popular | reverse | limit(3) %}
+<div class="swiper-slide p-1 me-3">
+<div class="row trans">
+<div class="col-md-3 p-3">
+<img class="img-fluid popular-post-image" width="100%" height="100%" alt="{{p.data.title}}" src="{{p.data.image}}"/>
+</div>
+<div class="col-md-6 p-3 ms-3">
+<h3 class="popular-post-header mb-3">{{p.data.title}}</h3>
+<p class="popular-post-text mb-3">{{p.data.description}}</p>
+</div>
+</div>
+</div>
+{% endfor %}
+</div>
+<div class="swiper-pagination"></div>
+</div>
+<script>var swiper = new Swiper(".mySwiper", {pagination: {el: ".swiper-pagination",dynamicBullets: true,},});</script>

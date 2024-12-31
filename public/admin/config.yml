@@ -1,0 +1,378 @@
+local_backend: true
+backend:
+  name: git-gateway
+#  repo: mesinkasir/bharatkat
+#  branch: main 
+media_folder: 'public/img'
+collections:
+
+  - name: "home"
+    label: "Home Page"
+    extension: "md"
+    editor:
+      preview: false
+    files:
+     - file: "content/index.md"
+       label: "Update Home Page Area"
+       name: "homepage"
+       widget: list
+       fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'description', label: 'Description', widget: 'string' }
+          - { name: 'image', label: 'Image', widget: 'image' }
+          - name: 'header'
+            label: 'Header'
+            widget: 'object'
+            hint: 'Header Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - { name: 'description', label: 'Description', widget: 'string'}
+             - name: 'social'
+               label: 'Social Icon'
+               widget: 'object'
+               fields: 
+                - { name: 'facebook', label: 'Social Icon 1 URL', widget: 'string' }
+                - { name: 'instagram', label: 'Social Icon 2 URL', widget: 'string' }
+                - { name: 'twitter', label: 'Social Icon 3 URL', widget: 'string' }
+                - { name: 'youtube', label: 'Social Icon 4 URL', widget: 'string' }
+          - name: 'intro'
+            label: 'Intro Area'
+            widget: 'object'
+            hint: 'Intro Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - name: 'items'
+               label: 'Intro Information'
+               widget: 'list'
+               fields: 
+                - { name: 'text', label: 'Title', widget: 'string' }
+                - { name: 'image', label: 'Image', widget: 'image' }
+          - name: 'section1'
+            label: 'Section1 Area'
+            hint: 'Section 1 Area -If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            widget: 'object'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - { name: 'sub_title', label: 'Sub Title', widget: 'string' }
+             - name: 'text'
+               label: 'Text Information'
+               widget: 'list'
+               fields: 
+                - { name: 'info', label: 'Content', widget: 'string' }
+          - name: 'section2'
+            label: 'Section2 Area'
+            hint: 'Section 2 Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            widget: 'object'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - { name: 'intro', label: 'Description', widget: 'string' }
+             - { name: 'image', label: 'Image', widget: 'image' }
+             - name: 'text'
+               label: 'Text Information'
+               widget: 'list'
+               fields: 
+                - { name: 'info', label: 'Content', widget: 'string' }
+             - { name: 'awards_image', label: 'Icon Image', widget: 'image' }
+             - { name: 'awards_text1', label: 'Text1 ', widget: 'string' }
+             - { name: 'awards_text2', label: 'Text 2', widget: 'string' }
+          - name: 'section3'
+            label: 'Section3 Area'
+            hint: 'Section 3 Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            widget: 'object'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - { name: 'intro', label: 'Description', widget: 'string' }
+             - { name: 'image', label: 'Image', widget: 'image' }
+             - name: 'text'
+               label: 'Text Information'
+               widget: 'list'
+               fields: 
+                - { name: 'info', label: 'Content', widget: 'string' }
+             - { name: 'awards_image', label: 'Icon Image', widget: 'image' }
+             - { name: 'awards_text1', label: 'Text1 ', widget: 'string' }
+             - { name: 'awards_text2', label: 'Text 2', widget: 'string' }
+          - name: 'section4'
+            label: 'Section4 Area'
+            hint: 'Section 4 Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            widget: 'object'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - { name: 'image', label: 'Image', widget: 'image' }
+             - { name: 'intro', label: 'Description', widget: 'string' }
+             - { name: 'awards_image', label: 'Icon Image', widget: 'image' }
+             - { name: 'awards_text1', label: 'Text1 ', widget: 'string' }
+             - { name: 'awards_text2', label: 'Text 2', widget: 'string' }
+          - name: 'section5'
+            label: 'Section5 Area'
+            hint: 'Section5 Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            widget: 'object'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - { name: 'image', label: 'Image', widget: 'image' }
+             - { name: 'intro', label: 'Description', widget: 'string' }
+             - { name: 'button', label: 'Text Button', widget: 'string' }
+             - { name: 'link', label: 'Button URL Link', widget: 'string' }
+          - name: 'section6'
+            label: 'Section6 Area'
+            hint: 'Section6 Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            widget: 'object'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - { name: 'image', label: 'Image', widget: 'image' }
+             - { name: 'intro', label: 'Description', widget: 'string' }
+             - { name: 'button', label: 'Text Button', widget: 'string' }
+             - { name: 'link', label: 'Button URL Link', widget: 'string' }
+          - name: 'section7'
+            label: 'Section7 Area'
+            hint: 'Section7 Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'
+            widget: 'object'
+            fields:
+             - { name: 'title', label: 'Title', widget: 'string' }
+             - { name: 'image', label: 'Image', widget: 'image' }
+             - { name: 'intro', label: 'Description', widget: 'string' }
+             - { name: 'step1', label: 'Step 1', widget: 'string' }
+             - { name: 'step2', label: 'Step 2', widget: 'string' }
+             - { name: 'step3', label: 'Step 3', widget: 'string' }
+
+  - name: "projects_list"
+    label: "Projects List Setup"
+    extension: "md"
+    editor:
+      preview: false
+    files:
+     - file: "content/projects.md"
+       label: "Update Project List"
+       name: "projectss"
+       widget: list
+       fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'description', label: 'Description', widget: 'string' }
+          - { name: 'image', label: 'Image', widget: 'image' , required: false }
+          - name: 'pagination'
+            label: 'Pagination'
+            widget: 'object'
+            fields:
+             - { name: 'size', label: 'Post To Show', widget: 'number', hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' }
+
+  - name: 'projects'
+    label: 'Project Article'
+    folder: 'content/projects'
+    slug: '{{slug}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { name: 'title', label: 'Title', widget: 'string' }
+      - { name: 'description', label: 'Description', widget: 'text' }
+      - { name: 'header', label: 'Header Text', widget: 'string' }
+      - { name: 'image', label: 'Image', widget: 'image' , required: false }
+      - name: 'info1'
+        label: 'Information 1'
+        widget: 'list'
+        hint: 'Information 1 Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' 
+        fields: 
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'text', label: 'Text Information', widget: 'string' }
+      - name: 'info2'
+        label: 'Information 2'
+        hint: 'Information 2 Area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' 
+        widget: 'list'
+        fields: 
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'text', label: 'Text Information', widget: 'string' }
+      - name: 'download'
+        label: 'Download Area'
+        widget: 'object'
+        fields: 
+          - { name: 'button', label: 'Button Text', widget: 'string' }
+          - { name: 'link', label: 'URL Link', widget: 'string' }
+      - { name: 'date', label: 'Publish Date', widget: 'datetime' }
+      - { name: 'tags', label: 'Tags', widget: 'list' }
+      - { name: 'body', label: 'Body', widget: 'markdown' ,hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' } 
+
+  - name: "blog_list"
+    label: "Blog List Setup"
+    extension: "md"
+    editor:
+      preview: false
+    files:
+     - file: "content/blog.md"
+       label: "Update Blog List"
+       name: "bloggers"
+       widget: list
+       fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'description', label: 'Description', widget: 'string' }
+          - { name: 'image', label: 'Image', widget: 'image' , required: false }
+          - name: 'pagination'
+            label: 'Pagination'
+            widget: 'object'
+            fields:
+             - { name: 'size', label: 'Post To Show', widget: 'number',hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/'  }
+
+  - name: 'blogs'
+    label: 'Blog Article'
+    folder: 'content/blog'
+    slug: '{{slug}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { name: 'title', label: 'Title', widget: 'string' }
+      - { name: 'description', label: 'Description', widget: 'text' }
+      - { name: 'image', label: 'Image', widget: 'image' , required: false }
+      - { name: 'author', label: 'Author', widget: 'string' , required: false }
+      - { name: 'date', label: 'Publish Date', widget: 'datetime' }
+      - { name: 'tags', label: 'Tags', widget: 'list' }
+      - { name: 'body', label: 'Body', widget: 'markdown' ,hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' } 
+
+  - name: 'pages'
+    label: 'Static Pages'
+    folder: 'content/pages'
+    slug: '{{slug}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { name: 'title', label: 'Title', widget: 'string' }
+      - { name: 'description', label: 'Description', widget: 'text' }
+      - { name: 'image', label: 'Image', widget: 'image' , required: false }
+      - { name: 'permalink', label: 'Permlaink URL Slug', widget: 'string',required: false  }
+      - { name: 'body', label: 'Body', widget: 'markdown' } 
+
+  - name: "seo"
+    label: "SEO Setup"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+     - file: "_data/metadata.json"
+       label: "SEO Website Configuration"
+       name: "widget"
+       widget: list
+       fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'description', label: 'Description', widget: 'string' }
+          - { name: 'language', label: 'Language', widget: 'string' }
+          - { name: 'locale', label: 'Locale', widget: 'string' }
+          - { name: 'favicon', label: 'Favicon', widget: 'image' }
+          - { name: 'image', label: 'Image', widget: 'image' }
+          - { name: 'facebook',label: 'Facebook URL Link',widget: 'string' }
+          - { name: 'twitter',label: 'Twitter URL Link',widget: 'string' }
+          - { name: 'tweet',label: 'Twitter User',widget: 'string' }
+          - name: 'author'
+            label: 'Website Author'
+            hint: 'Author for your website - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' 
+            widget: 'object'
+            fields:
+             - { name: 'name', label: 'Author Name', widget: 'string' }
+             - { name: 'email', label: 'Author Email Address', widget: 'string'}
+             - { name: 'url', label: 'Author URL Link', widget: 'string'}
+
+  - name: "navs"
+    label: "Navbar"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+     - file: "_data/metadata.json"
+       label: "Update Navbar Area"
+       name: "widget"
+       widget: list
+       fields:
+          - name: 'navbar'
+            label: 'Update Navbar Area'
+            widget: 'object'
+            fields:
+             - { name: 'logo', label: 'Footer Logo', widget: 'image' }
+             - name: 'navlist'
+               label: 'Navbar List'
+               widget: 'list'
+               fields:
+                - { name: 'nav', label: 'Social Media Title', widget: 'string' }
+                - { name: 'link', label: 'Social Media Link URL', widget: 'string'}
+             - name: 'button'
+               label: 'Navbar Button'
+               hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' 
+               widget: 'object'
+               fields:
+                - { name: 'text', label: 'Button Nav Text', widget: 'string' }
+                - { name: 'link', label: 'Button Nav URL Link', widget: 'string',hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' }
+
+  - name: "widgets"
+    label: "Widget"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+     - file: "_data/metadata.json"
+       label: "Update Widget Area"
+       name: "widget"
+       widget: list
+       fields:
+          - name: 'blog_widget'
+            label: 'Blog Widget'
+            hint: 'For Blog widget area on home page - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' 
+            widget: 'object'
+            fields:
+             - { name: 'title', label: 'Blog Widget Title', widget: 'string' }
+             - { name: 'intro', label: 'Blog Widget Description', widget: 'string'}
+             - { name: 'button', label: 'Button Text Blog Widget', widget: 'string'}
+          - name: 'post_widget'
+            label: 'Post Widget'
+            widget: 'object'
+            hint: 'For your Popular post widget - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' 
+            fields:
+             - { name: 'popular', label: 'Popular Post Widget Title', widget: 'string' }
+          - name: 'marquee'
+            label: 'Promotion Marquee Widget'
+            hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' 
+            widget: 'list'
+            fields:
+             - { name: 'text', label: 'Marquee Widget Title', widget: 'string' }
+             - { name: 'link', label: 'Marquee Widget Link', widget: 'string',hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' }
+
+  - name: "footers"
+    label: "Footer"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+     - file: "_data/metadata.json"
+       label: "Update Footer Area"
+       name: "widget"
+       widget: list
+       fields:
+          - name: 'footer'
+            label: 'Update Footer Area'
+            widget: 'object'
+            fields:
+             - { name: 'logo', label: 'Footer Logo', widget: 'image' }
+             - { name: 'info', label: 'Footer Text Information', widget: 'text'}
+             - name: 'navlist'
+               label: 'Social Media Widget'
+               widget: 'list'
+               fields:
+                - { name: 'nav', label: 'Social Media Title', widget: 'string' }
+                - { name: 'link', label: 'Social Media Link URL', widget: 'string'}
+             - name: 'social'
+               label: 'Social Media Widget'
+               hint: 'If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' 
+               widget: 'list'
+               fields:
+                - { name: 'nav', label: 'Social Media Title', widget: 'string' }
+                - { name: 'icon', label: 'Social Media Icon', widget: 'image'}
+                - { name: 'link', label: 'Social Media Link URL', widget: 'string',hint: 'Footer Social media area - If you need help or want to hire our team please send an email to creativebydre@gmail.com, download our open source code projects https://www.hockeycomputindo.com/themes/' }
+
+  - name: "copyright"
+    label: "Copyrigths"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+     - file: "_data/metadata.json"
+       label: "Update Copyrights Footer"
+       name: "copyrights"
+       widget: object
+       fields:
+          - { name: 'copyrights', label: 'Copyrights Text Information', widget: 'text' }

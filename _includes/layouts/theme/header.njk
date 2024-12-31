@@ -1,0 +1,71 @@
+<div class="hero">
+{% include "widget/navbar.njk" %}
+<div class="grid-containers">
+  <div class="container">
+    <div class="featured-blog-hero">
+      <h2 class="section-title">{{title}}</h2>
+      <p class="section-subtitle">{{description}}</p>
+      <div class="featured-posts-slider">
+        <div class="slider-containeres">
+          {% for p  in collections.popular | reverse | limit(3) %}
+          <div class="slide">
+            <div class="post-image">
+              <img src="{{p.data.image}}"alt="{{p.data.title}}">
+            </div>
+            <div class="post-content ms-5 desktop">
+              <h3>{{p.data.title}}</h3>
+              <p class="col-md-11">{{p.data.description}}</p>
+              <a href="{{p.url}}" class="btn">{{p.data.title}} </a>
+            </div>
+            <div class="post-content mobile">
+              <h3>{{p.data.title}}</h3>
+              <p class="col-md-11">{{p.data.description}}</p>
+              <a href="{{p.url}}" class="btn">{{p.data.title}} </a>
+            </div>
+          </div>
+          {% endfor  %}
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const slidero = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  let currentSlide = 0;
+
+  function showSlide(n) {
+    slidero[currentSlide].style.display = 'none';
+    dots[currentSlide].classList.remove('active');
+    currentSlide = (n + slidero.length) % slidero.length;
+    slidero[currentSlide].style.display = 'flex';
+    dots[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => showSlide(index));
+  });
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+
+  // Initialize the first slide
+  showSlide(0);
+});
+  </script>
