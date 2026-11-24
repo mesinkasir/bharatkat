@@ -2,11 +2,9 @@
 
 ## BharatKat
 
-### YAL YAL !! HAPY NEW YEARS !! 🎉
+Explore all projects: https://www.hockeycomputindo.com
 
 Portfolio web developer site built with 11ty + Headless Decap CMS integration
-
-Free download and open source code project - by [creativitas](https://www.creativitas.dev)
 
 Run Demo 1 : [https://bharatkat.axcora.com/](https://bharatkat.axcora.com/)
 
